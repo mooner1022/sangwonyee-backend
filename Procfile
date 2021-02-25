@@ -1,0 +1,1 @@
+web: ./build/install/sangwonyee-backend/bin/sangwonyee-backend
