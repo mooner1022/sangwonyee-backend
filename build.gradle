@@ -13,6 +13,8 @@ apply plugin: 'kotlin'
 apply plugin: 'application'
 apply plugin: "kotlinx-serialization"
 
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
 group 'com.moonm'
 version '0.0.1'
 mainClassName = "io.ktor.server.netty.EngineMain"
